@@ -14,7 +14,7 @@ And within out Minecraft.java file you want to get you Client class:
 ```
 private void startGame() throws LWJGLException  
 {  
-  new Client().preInitialize;
+  new Client().preInitialize();
   ...
 ```
 If you don't have a method within the main class of your client, you can simply put it (the EventBus register) in the classes constructor.
