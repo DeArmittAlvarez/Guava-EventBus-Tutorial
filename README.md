@@ -30,7 +30,7 @@ Once we have our class we can use it as we please. For example you could go to y
 ```
 @Subscribe  
 public void tickEvent(TickEvent tick) {
-	System.out.println("Client Tick")
+	System.out.println("Client Tick");
 }
 ```
 ## Posting Events
