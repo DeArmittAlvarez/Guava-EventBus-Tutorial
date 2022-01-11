@@ -14,7 +14,7 @@ And within out Minecraft.java file you want to get you Client class:
 ```
 private void startGame() throws LWJGLException  
 {  
-  new Client().preInitialize;
+  new Client().preInitialize();
   ...
 ```
 If you don't have a method within the main class of your client, you can simply put it (the EventBus register) in the classes constructor.
@@ -22,7 +22,7 @@ If you don't have a method within the main class of your client, you can simply 
 The next thing we do is create a listener class. This will be empty most of the time but you could methods inside of it. There are draw backs to doing this and the main one is that if multiple classes need an event (lets say a tick event).
 In our example it will be empty:
 ```
-public  class TickEvent {
+public class TickEvent {
 
 }
 ```
